@@ -1,4 +1,5 @@
-import 'package:chatter/auth/auth.dart';
+import 'package:chatter/pages/chat_page.dart';
+// import 'package:chatter/pages/home_page.dart';
 import 'package:chatter/themes/light_mode.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const AuthPage(),
+      home: const ChatPage(
+        receiverEmail: 'GeorgesRoberto email',
+      ),
       theme: lightMode,
     );
   }
